@@ -22,6 +22,14 @@ public class Animal extends Savane{
 
     public void rencontrer(Animal animal, Savane savane){
         System.out.println("rencontre");
+    }
 
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "sexe='" + sexe + '\'' +
+                ", nom='" + nom + '\'' +
+                ", vivant=" + vivant +
+                '}';
     }
 }

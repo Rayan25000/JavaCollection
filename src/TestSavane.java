@@ -54,5 +54,22 @@ public class TestSavane extends Savane {
             animal.dormirDansLaSavane();
         }
 
+
+        //Instanciation automatique de 50 lions
+        for (int i = 0; i < 50; i++) {
+            String nom = "lion"+i;
+            int rand = (int) ( Math.random() * 2 + 1);
+            if(rand == 1)
+                animalAuto.add(new Lion("male", nom));
+            else if(rand == 2){
+                animalAuto.add(new Lion("femelle", nom));
+            }
+        }
+
+        //50 rencontres
+        for (int i = 0; i < 50; i++) {
+            animalAuto.get(i).rencontrer();
+        }
+
     }
 }

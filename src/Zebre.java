@@ -16,7 +16,7 @@ public class Zebre extends Animal{
 
     }
 
-    public void rencontre(Animal animal, Savane savane){
+    public void rencontrer(Animal animal, Savane savane){
         if(animal instanceof Zebre){
             if(!this.sexe.equals(animal.sexe)) {
                 String concat = this.nom + animal.nom;
